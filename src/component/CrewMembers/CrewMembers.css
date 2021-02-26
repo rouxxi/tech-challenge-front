@@ -1,5 +1,5 @@
 .H4crew {
-    margin: 0 0 15px 0;
+    margin: 20px 0 15px 0;
 }
 
 .cell {
@@ -13,7 +13,7 @@
 }
 .name {
     margin: 0 10px 0 10px;
-    width: 200px;
+    min-width: 100px;
 }
 
 .liste {

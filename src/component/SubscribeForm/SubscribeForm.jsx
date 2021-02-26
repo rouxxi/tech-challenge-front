@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './subscribeForm.css'
 
 function SubscribeForm(props) {
     const {name, setName, message, setMessage} = props;
@@ -31,7 +32,7 @@ function SubscribeForm(props) {
 
 
     return (
-        <div>
+        <div className='form'>
         <form>
             <label htmlFor="">Name:&nbsp;
             <input type="text" value={name} onChange={handleChange}/>
@@ -39,7 +40,7 @@ function SubscribeForm(props) {
             &nbsp;
             <input type="submit" value='Send' onClick={onSubmit} />
         </form>
-        {message && <div>{message}</div>}
+        {message && <div className='msg'>{message}</div>}
         </div>
     )
 }
