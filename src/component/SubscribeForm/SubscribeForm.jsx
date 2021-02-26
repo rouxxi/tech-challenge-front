@@ -1,9 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
-function SubscribeForm() {
-    const [message, setMessage] = React.useState("")
-    const [name, setName] = React.useState("")
+function SubscribeForm(props) {
+    const {name, setName, message, setMessage} = props;
     const {REACT_APP_BACKURL} = process.env;
     
     const handleChange = (e) => {
